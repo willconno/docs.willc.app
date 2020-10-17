@@ -1,0 +1,39 @@
+.root {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: white!important;
+    grid-template-columns: minmax(200px, 20%) auto;
+}
+
+.body {
+    margin: 2em;
+    display: table;
+    position: static;
+    font-family: "Open Sans"!important;
+    background-color: #d1d1d1!important;
+    border-radius: 3px;
+    border: 0.75px solid darkgray;
+    box-shadow: 1px 1px 10px  #B2B2B2;
+}
+
+.title {
+    color: #000;
+    padding-top: 12px;
+    font-size: xx-large;
+    background-color: #C1C1C1;
+    padding: 1em;
+}
+
+.subtitle {
+    padding: 1em;
+    color: #000;
+    font-size: large;
+}
+
+.sectionTitle {
+    padding: 1em;
+    color: #000;
+    color: #525252;
+    font-size: medium;    
+}
