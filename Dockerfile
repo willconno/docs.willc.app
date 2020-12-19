@@ -2,12 +2,13 @@ FROM amazonlinux:2018.03
 MAINTAINER Will Connelly <me@willconnelly.com.au>
 
 # Add node repo
-RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_15.x | bash -
 
 # Install system dependencies
 RUN yum install -y vi curl nginx nodejs
 
 RUN npm i nodemon -g
+RUN npm i typescript -g
 
 # nginx config
 RUN mkdir -p /etc/nginx/conf.d
@@ -20,5 +21,7 @@ RUN echo "NETWORKING=yes" > /etc/sysconfig/network
 COPY default.conf /etc/nginx/conf.d/
 
 WORKDIR /var/www/docs
+
+RUN npm install
 
 EXPOSE 8080

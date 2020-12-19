@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import Home from './home/Home';
+import MiniDrawer from './components/Drawer';
 
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
 const LandingScreen = (props) => {
   return (
     <div className="App">
+      
+      <MiniDrawer  />
+
       <header className="App-header">
         <Link to="/home">
           <img src={logo} className="App-logo" alt="logo" />

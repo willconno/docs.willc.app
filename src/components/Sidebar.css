@@ -11,15 +11,19 @@ h4 {
 
 .header {
     
-    width: "100%";
     background-color: #5A7DA0;
-    
+    width: "100%";
+    float: left;
 }
 
-.drawerControlButton {
-    padding: 16px;
+.menu-button-container {
+    text-align: center;
 }
 
-.header-button {
+.menu-button-icon {
+    margin: 16px;
+}
 
+.vertical-center {
+    transform: translateY(50%);
 }

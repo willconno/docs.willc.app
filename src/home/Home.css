@@ -3,7 +3,13 @@
     height: 100vh;
     display: grid;
     background-color: white!important;
+}
+.root-expanded {
     grid-template-columns: minmax(200px, 20%) auto;
+}
+
+.root-collapsed {
+    grid-template-columns: 4em auto;
 }
 
 .body {
